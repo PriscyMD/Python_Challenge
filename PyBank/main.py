@@ -4,6 +4,8 @@ import pandas as pd
 #df.head()
 # Create a DataFrame from the provided data
 df = pd.read_csv("C:/Users/Priscy/Desktop/GitHubRepository/Python_Challenge/PyBank/Resources.csv")
+output = "archivo.txt"
+with open(output, "w+") as file: "analysis.txt"
 
 #Total Months
 Totalmonths = df["Date"].count()

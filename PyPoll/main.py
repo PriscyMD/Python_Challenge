@@ -3,6 +3,8 @@ import pandas as pd
 # Create a DataFrame from the provided data
 #poll = pd.read_csv("C:/Users/Priscy/Desktop/GitHubRepository/Python_Challenge/PyPoll/Resources.csv")
 poll = pd.read_csv("C:/Users/Priscy/Desktop/GitHubRepository/Python_Challenge/PyPoll/Resources.csv")
+output = "archivo.txt"
+with open(output, "w+") as file: "analysis.txt"
 
 #Total Votes
 #poll["County"].count()
