@@ -2,9 +2,7 @@ import pandas as pd
 
 # Create a DataFrame from the provided data
 #poll = pd.read_csv("C:/Users/Priscy/Desktop/GitHubRepository/Python_Challenge/PyPoll/Resources.csv")
-poll = pd.read_csv("C:/Users/Priscy/Desktop/GitHubRepository/Python_Challenge/PyPoll/Resources.csv")
-output = "archivo.txt"
-with open(output, "w+") as file: "analysis.txt"
+poll = pd.read_csv("PyPoll/election_data.csv")
 
 #Total Votes
 #poll["County"].count()
@@ -49,3 +47,25 @@ Winner: {poll['Candidate'].describe()['top']}
 --------------------------------------------------
 ''')
 
+archivo = open("analysispypoll.txt","w")
+archivo.write(f'''
+Election Results:
+      
+--------------------------------------------------
+      
+Total votes: {total_votos}
+
+--------------------------------------------------
+
+Charles Casper Stockham: {pc_cand1}% ({cand1})
+
+Diana DeGette: {pc_cand2}% ({cand2})
+
+Raymon Anthony Doane: {pc_cand3}% ({cand3})
+
+--------------------------------------------------
+
+Winner: {poll['Candidate'].describe()['top']}
+
+--------------------------------------------------
+''')
