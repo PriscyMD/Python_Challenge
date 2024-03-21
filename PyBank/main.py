@@ -1,6 +1,6 @@
 import pandas as pd
 
-df = pd.read_csv("./PyBank/budget_data.csv")
+df = pd.read_csv("budget_data.csv")
 #df.head()
 # Create a DataFrame from the provided data
 #df = pd.read_csv("C:/Users/Priscy/Desktop/GitHubRepository/Python_Challenge/PyBank/Resources.csv")

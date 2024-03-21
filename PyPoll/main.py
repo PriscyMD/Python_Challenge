@@ -2,7 +2,7 @@ import pandas as pd
 
 # Create a DataFrame from the provided data
 #poll = pd.read_csv("C:/Users/Priscy/Desktop/GitHubRepository/Python_Challenge/PyPoll/Resources.csv")
-poll = pd.read_csv("PyPoll/election_data.csv")
+poll = pd.read_csv("election_data.csv")
 
 #Total Votes
 #poll["County"].count()
