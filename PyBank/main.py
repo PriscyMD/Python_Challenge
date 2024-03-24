@@ -1,13 +1,14 @@
 import pandas as pd
 
-#df = pd.read_csv("C:/Users/Priscy/Desktop/GitHubRepository/Python_Challenge/PyBank/Resources.csv")
+df = pd.read_csv("budget_data.csv")
 #df.head()
 # Create a DataFrame from the provided data
-df = pd.read_csv("C:/Users/Priscy/Desktop/GitHubRepository/Python_Challenge/PyBank/Resources.csv")
-output = "archivo.txt"
-with open(output, "w+") as file: "analysis.txt"
+#df = pd.read_csv("C:/Users/Priscy/Desktop/GitHubRepository/Python_Challenge/PyBank/Resources.csv")
+#main_py = os.path.join("PyBank", "Resources.csv")
+#cvspath = os.path.join("PyBank", "Resources.csv")
 
 #Total Months
+#Totalmonths = df["Date"].count()
 Totalmonths = df["Date"].count()
 
 #net_amount = df["Profit/Losses"].sum()
@@ -49,6 +50,20 @@ Average Change: ${Average}
 
 Greatest Increase in profits: {gratest_increase_date.values} {gratest_increase_amount.values}
 
-Greatest Decrease in profits: {gratest_decrease_date.values} {gratest_increase_amount.values}
+Greatest Decrease in profits: {gratest_decrease_date.values} {gratest_decrease_amount.values}
 ''')
 
+archivo = open("analysispybank.txt","w")
+archivo.write(f'''Financial Analytics:
+      
+--------------------------------------------------
+      
+Total months {Totalmonths}
+
+Total: ${Total}
+
+Average Change: ${Average}
+
+Greatest Increase in profits: {gratest_increase_date.values} {gratest_increase_amount.values}
+
+Greatest Decrease in profits: {gratest_decrease_date.values} {gratest_decrease_amount.values}''')
